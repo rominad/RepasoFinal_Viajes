@@ -15,6 +15,6 @@
         Me.Nombre = nombre
     End Sub
     Public Overrides Function ToString() As String
-        Return "Nombre: " & Nombre
+        Return Nombre
     End Function
 End Class

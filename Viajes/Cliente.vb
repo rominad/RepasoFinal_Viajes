@@ -2,7 +2,7 @@
     Private _cuit_cuil As String
     Private _pasajero As Pasajero
     'propiedades
-    Private Property Cuit_cuil As String
+    Public Property Cuit_cuil As String
         Get
             Return _cuit_cuil
         End Get

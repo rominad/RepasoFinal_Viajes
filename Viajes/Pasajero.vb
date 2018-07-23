@@ -24,6 +24,6 @@
         Me.Nombre = nombre
     End Sub
     Public Overrides Function ToString() As String
-        Return "Nombre: " & Nombre & " -DNI: " & DNI
+        Return Nombre & " -DNI: " & DNI
     End Function
 End Class

@@ -8,3 +8,13 @@ C:\Users\Romina\source\repos\Viajes\Viajes\obj\Debug\Viajes.vbproj.CoreCompileIn
 C:\Users\Romina\source\repos\Viajes\Viajes\obj\Debug\Viajes.dll
 C:\Users\Romina\source\repos\Viajes\Viajes\obj\Debug\Viajes.xml
 C:\Users\Romina\source\repos\Viajes\Viajes\obj\Debug\Viajes.pdb
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\bin\Debug\Viajes.dll
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\bin\Debug\Viajes.pdb
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\bin\Debug\Viajes.xml
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.vbprojAssemblyReference.cache
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.Resources.resources
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.vbproj.GenerateResource.cache
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.vbproj.CoreCompileInputs.cache
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.dll
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.xml
+C:\Users\Romina\Documents\ProyectosVisual\RepasoFinal_Viajes\Viajes\obj\Debug\Viajes.pdb

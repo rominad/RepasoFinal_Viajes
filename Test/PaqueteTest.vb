@@ -2,32 +2,33 @@
 
 Module PaqueteTest
     Sub Main()
-        Dim pasajero1 As New Pasajero(35124656, "Benitez Martin")
-        Dim pasajero2 As New Pasajero(34524561, "Baltazar David")
-        'Dim servicio1 As New Servicio("Hotel 1")
-        'Dim servicio2 As New Servicio("Hotel 2")
-        Dim Paquete1 As New Paquete
 
-        Console.WriteLine(pasajero1.ToString())
-        Console.WriteLine(pasajero2.ToString())
-        'Console.WriteLine(servicio1.ToString())
-        'Console.WriteLine(servicio2.ToString())
+        Try
+            Dim paquete1 As New Paquete()
+            Dim hotel1 As New Hotel("HotelCopado", 2, 5, 100)
+            Dim pasaje1 As New Pasaje("Posadas-Santa Ana", Today, 100, 0.2)
+            Dim pasajero1 As New Pasajero(35124656, "Benitez Martin")
+            Dim pasajero2 As New Pasajero(34524561, "Baltazar David")
 
+            paquete1.addPasajeros(pasajero1)
+            paquete1.addPasajeros(pasajero2)
+            paquete1.addServicios(hotel1)
+            paquete1.addServicios(pasaje1)
 
-        Paquete1.addPasajeros(pasajero1)
-        Paquete1.addPasajeros(pasajero2)
-        'Paquete1.addServicios(servicio1)
-        'Paquete1.addServicios(servicio2)
-        Paquete1.calcularCosto()
+            Console.WriteLine("Paquete:")
+            Console.WriteLine(paquete1.ToString())
+            Console.WriteLine("Listado de Pasajeros")
+            For Each pasajero In paquete1.getAllPasajeros()
+                Console.WriteLine("- {0}", pasajero)
+            Next
+            Console.WriteLine("calcular costos: {0}", paquete1.calcularCosto())
 
-        Console.WriteLine(Paquete1.ToString())
+        Catch ex As Exception
+            'Console.WriteLine(ex.Message)
+            Console.WriteLine("Error inesperado!")
 
-        For Each pasajero In Paquete1.getAllPasajeros()
-            Console.WriteLine("Pasajero: {0}", pasajero)
-        Next
+        End Try
 
-
-        Console.WriteLine()
         Console.ReadLine()
 
     End Sub

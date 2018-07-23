@@ -50,7 +50,7 @@ Public Class Hotel
         Me.valorDiaria = diaria
     End Sub
     Public Overrides Function ToString() As String
-        Return "Nombre Servicio: " + Descripcion
+        Return Descripcion
     End Function
 
     Public Overloads Function calcularCosto() As Single Implements Abono.calcularCosto

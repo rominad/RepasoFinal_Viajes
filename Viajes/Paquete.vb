@@ -25,21 +25,21 @@ Public Class Paquete
             Return DateDiff(DateInterval.Day, fechaInicial, fechaFinal)
         End Get
     End Property
-
-
-
     Public ReadOnly Property numeroMiembros As Integer
         Get
             Return _pasajeros.Count()
         End Get
     End Property
-    'propiedad interface
     Public Function calcularCosto() As Single Implements Abono.calcularCosto
-        Throw New NotImplementedException()
+        Dim total As New Single
+        For Each servicio In getAllServicios()
+            total += servicio.calcularCosto()
+        Next
+        Return total
     End Function
     'metodo clase
-    Public Sub addPasajeros(_persona As Pasajero)
-        _pasajeros.Add(_persona)
+    Public Sub addPasajeros(value As Pasajero)
+        _pasajeros.Add(value)
     End Sub
     Public Function getAllPasajeros() As List(Of Pasajero)
         Return _pasajeros
@@ -52,10 +52,12 @@ Public Class Paquete
         Return _servicios
     End Function
     ' constructor
-
     Sub New()
         _fechaFinal = Nothing
-        _fechaFinal = Nothing
+        _fechaInicial = Nothing
+        _numeroDias = Nothing
+        _pasajeros = New List(Of Pasajero)
+        _servicios = New List(Of Servicio)
     End Sub
     Public Overrides Function ToString() As String
         Dim Servicios As String = ""

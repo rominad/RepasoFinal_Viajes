@@ -14,7 +14,7 @@
     End Property
     'metodos
     Public Overrides Function ToString() As String
-        Return "Servicio: " + Descripcion
+        Return Descripcion
     End Function
     'constructores
     Sub New(descripcion As String)
